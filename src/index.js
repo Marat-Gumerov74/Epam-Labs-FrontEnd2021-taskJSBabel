@@ -1,17 +1,12 @@
-import './style.scss'
-
-const start = 'start'
-console.log(start)
-
-class Hello {
-  constructor() {
-    this.start2 = "start2"
+class Student {
+  constructor(fname, lname, age, address) {
+    this.fname = fname;
+    this.lname = lname;
+    this.age = age;
+    this.address = address;
   }
 
-  output = () => {
-    console.log(this.start2)
+  get fullname() {
+    return this.fname +"-"+this.lname;
   }
 }
-
-const hello = new Hello()
-hello.output()
